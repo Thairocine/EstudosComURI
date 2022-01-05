@@ -1,0 +1,28 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner leitor = new Scanner(System.in);
+		
+		
+		String entrada = leitor.nextLine();
+		String[] separador = entrada.split(" ");
+		
+		int numeroConvertido1 = Integer.parseInt(separador[0]);
+		int numeroConvertido2 = Integer.parseInt(separador[1]);
+		
+		
+		if(numeroConvertido1 % numeroConvertido2 == 0 || numeroConvertido2 % numeroConvertido1 == 0) {
+			System.out.println("Sao Multiplos");
+		}else {
+			System.out.println("Nao sao Multiplos");
+			
+			
+		}
+		
+    }
+ 
+}
