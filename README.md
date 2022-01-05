@@ -1,2 +1,3 @@
-# EstudosComURI
-Repositório para resolver algumas questões em Python e Java.
+# Estudos de Programação 
+- Repositório para resolver algumas questões em Python e Java.
+
