@@ -1,0 +1,25 @@
+import java.io.IOException;
+import java.util.Scanner; 
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner sc = new Scanner(System.in);
+        int contadorPares = 0; 
+        
+        for(int i = 1; i <= 5; i++){
+             
+             int numeros = sc.nextInt();
+             
+             if (numeros % 2 == 0){
+                 contadorPares += 1;
+             }
+        }
+        
+        System.out.println(contadorPares + " valores pares");
+        
+        
+    }
+ 
+}
