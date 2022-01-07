@@ -1,0 +1,17 @@
+contaPares = contaImpares = contaPositivo = contaNegativos = 0
+
+for i in range(5):
+	numero = int(input())
+	if numero % 2 == 0:
+		contaPares += 1 
+	if numero % 2 != 0:
+		contaImpares += 1 
+	if numero > 0: 
+		contaPositivo += 1 
+	if numero < 0:
+		contaNegativos += 1 
+
+print(f'{contaPares} valor(es) par(es)')
+print(f'{contaImpares} valor(es) impar(es)')
+print(f'{contaPositivo} valor(es) positivo(s)')
+print(f'{contaNegativos} valor(es) negativo(s)')
