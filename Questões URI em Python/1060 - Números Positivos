@@ -1,0 +1,8 @@
+contaPositivos = 0 
+
+for i in range(6):
+	numeroInteiro = float(input())
+	if numeroInteiro >= 0:
+		contaPositivos += 1 
+	
+print(f'{contaPositivos} valores positivos')
