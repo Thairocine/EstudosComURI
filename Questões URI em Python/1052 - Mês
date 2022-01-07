@@ -1,0 +1,46 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+ 
+        Scanner sc = new Scanner(System.in);
+		
+		int mes = sc.nextInt();
+		
+	
+		String nomeDoMes;
+		
+		switch(mes) {
+		case 1: nomeDoMes = "January";
+		break;
+		case 2: nomeDoMes = "February";
+		break;
+		case 3: nomeDoMes = "March";
+		break;
+		case 4: nomeDoMes = "April";
+		break;
+		case 5: nomeDoMes = "May";
+		break;
+		case 6: nomeDoMes = "June";
+		break;
+		case 7: nomeDoMes = "July";
+		break;
+		case 8: nomeDoMes = "August";
+		break;
+		case 9: nomeDoMes = "September";
+		break;
+		case 10: nomeDoMes = "October";
+		break;
+		case 11: nomeDoMes = "November";
+		break;
+		default: nomeDoMes = "December";
+		break;
+		}
+		
+		System.out.println(nomeDoMes);
+ 
+    }
+ 
+}
