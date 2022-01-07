@@ -1,0 +1,10 @@
+somador = contador = 0 
+for i in range(6):
+    numeros = float(input())
+    
+    if numeros > 0:
+        contador += 1 
+        somador += numeros 
+media = somador / contador
+print(f'{contador} valores positivos') 
+print(f'{media:.1f}')
