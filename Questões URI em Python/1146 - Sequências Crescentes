@@ -1,0 +1,10 @@
+while True: 
+	entrada = int(input())
+
+	if entrada == 0: 
+		break
+
+	novaString = ""
+	for i in range(1, entrada + 1):
+		novaString += str(i) + " "
+	print(novaString.rstrip())
