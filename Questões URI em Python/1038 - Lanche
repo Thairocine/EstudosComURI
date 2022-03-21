@@ -1,0 +1,29 @@
+somador = 0 
+
+numero = str(input()).split()
+
+lanche_01 = int(numero[0]) 
+quantidade = int(numero[1])
+
+    
+if lanche_01 == 1: 
+    somador += 4 
+
+    
+if lanche_01 == 2: 
+    somador += 4.5
+
+if lanche_01 == 3: 
+    somador += 5
+
+
+if lanche_01 == 4: 
+    somador += 2
+
+
+if lanche_01 == 5: 
+    somador += 1.5
+
+total = somador * quantidade 
+
+print(f"Total: R$ {total:.2f}")
