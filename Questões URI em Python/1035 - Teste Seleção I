@@ -1,0 +1,9 @@
+valor_a = int(valores[0])
+valor_b = int(valores[1])
+valor_c = int(valores[2])
+valor_d = int(valores[3])
+
+if valor_b > valor_c and valor_d > valor_a and (valor_c + valor_d) > (valor_a + valor_b) and valor_d > 0 and valor_b > 0 and valor_a % 2 == 0: 
+    print("Valores aceitos")
+else:
+    print("Valores nao aceitos")
