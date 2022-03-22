@@ -1,0 +1,27 @@
+notas = str(input()).split()
+
+n1 = float(notas[0])
+n2 = float(notas[1])
+n3 = float(notas[2])
+n4 = float(notas[3])
+
+media_notas = ((n1 * 2) + (n2 * 3) + (n3 * 4) + (n4 * 1)) / 10 
+
+if (media_notas >= 7): 
+    print(f"Media: {media_notas:.1f}\nAluno aprovado.")
+    
+elif (media_notas < 5):
+    print(f"Media: {media_notas:.1f}\nAluno reprovado.")
+    
+else: 
+    nota_nova = float(input())
+    media_nova  = (media_notas + nota_nova)/ 2
+    
+    print(f"Media: {media_notas:.1f}\nAluno em exame.")
+    print(f"Nota do exame: {nota_nova:.1f}")
+    
+    if media_nova >= 5: 
+        print(f"Aluno aprovado.\nMedia final: {media_nova:.1f}")
+        
+    else: 
+        print(f"Aluno reprovado.\nMedia final: {media_nova:.1f}")
