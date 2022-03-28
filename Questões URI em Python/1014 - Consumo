@@ -1,0 +1,5 @@
+valor_km = int(input())
+valor_litros = float(input())
+valor_kmlitros = valor_km / valor_litros
+
+print(f'{valor_kmlitros:.3f} km/l')
