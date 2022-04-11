@@ -1,0 +1,22 @@
+def CodelandUsernameValidation(strParam):
+
+
+    booleanoValidacoes = False 
+    tamanho = len(strParam)
+
+    if tamanho >= 4 and tamanho <= 25:
+        if strParam[0].isalpha():
+            for index in range(len(strParam)):
+                if strParam[-1] != "_":
+                    if strParam[index].isalpha() or strParam[index].isnumeric() or strParam[index] == "_":
+                        booleanoValidacoes = True 
+
+    if booleanoValidacoes == True: 
+        return ': verdadeira'
+    else: 
+        return ': falsa'
+               
+
+
+# keep this function call here 
+print(CodelandUsernameValidation(input()))
