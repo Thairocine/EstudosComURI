@@ -1,0 +1,6 @@
+entrada = int(input()) 
+
+result = entrada * 2
+
+
+print(f'{result} minutos') 
