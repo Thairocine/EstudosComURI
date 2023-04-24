@@ -1,0 +1,18 @@
+entrada = str(input()).split()
+
+entrada_a = float(entrada[0])
+entrada_b = float(entrada[1])
+entrada_c = float(entrada[2])
+
+
+triangulo = (entrada_a * entrada_c) / 2
+circulo = 3.14159 * (entrada_c ** 2)
+trapezio = ((entrada_a + entrada_b) * entrada_c) / 2
+quadrado = entrada_b * entrada_b
+retangulo = entrada_a * entrada_b
+
+print(f'TRIANGULO: {triangulo:.3f}')
+print(f'CIRCULO: {circulo:.3f}')
+print(f'TRAPEZIO: {trapezio:.3f}')
+print(f'QUADRADO: {quadrado:.3f}')
+print(f'RETANGULO: {retangulo:.3f}')
