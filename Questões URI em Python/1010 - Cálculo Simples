@@ -1,0 +1,9 @@
+entrada1 = str(input()).split()
+entrada2 = str(input()).split()
+
+produto1 = float(entrada1[1]) * float(entrada1[2])
+produto2 = float(float(entrada2[1]) * float(entrada2[2]))
+
+resultado = produto1 + produto2 
+
+print(f'VALOR A PAGAR: R$ {resultado:.2f}')
