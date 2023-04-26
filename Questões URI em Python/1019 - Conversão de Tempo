@@ -1,0 +1,11 @@
+entrada = int(input())
+
+horas = entrada // 3600 
+resto = entrada - horas * 3600 
+entrada = resto
+minutos = resto // 60 
+resto = entrada - minutos * 60
+segundos = resto 
+
+
+print(f'{horas}:{minutos}:{segundos}')
