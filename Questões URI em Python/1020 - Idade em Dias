@@ -1,0 +1,13 @@
+entrada = int(input())
+
+ano = entrada // 365 
+resto = entrada - ano * 365 
+entrada = resto 
+
+meses = resto // 30 
+resto = entrada - meses * 30
+
+
+print(f'{ano} ano(s)')
+print(f'{meses} mes(es)')
+print(f'{resto} dia(s)')
