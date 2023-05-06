@@ -1,29 +1,23 @@
-somador = 0 
+result = 0
 
-numero = str(input()).split()
+entrada = str(input()).split()
 
-lanche_01 = int(numero[0]) 
-quantidade = int(numero[1])
+codigo = int(entrada[0])
+quantidade = float(entrada[1])
 
-    
-if lanche_01 == 1: 
-    somador += 4 
+if codigo == 1:
+    result = quantidade * 4
 
-    
-if lanche_01 == 2: 
-    somador += 4.5
+elif codigo == 2:
+    result = quantidade * 4.50
 
-if lanche_01 == 3: 
-    somador += 5
+elif codigo == 3:
+    result = quantidade * 5
 
+elif codigo == 4:
+    result = quantidade * 2
 
-if lanche_01 == 4: 
-    somador += 2
+elif codigo == 5:
+    result = quantidade * 1.50
 
-
-if lanche_01 == 5: 
-    somador += 1.5
-
-total = somador * quantidade 
-
-print(f"Total: R$ {total:.2f}")
+print(f'Total: R$ {result:.2f}')
