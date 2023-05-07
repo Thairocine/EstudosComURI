@@ -1,0 +1,37 @@
+entrada = str(input()).split()
+
+valor_a = int(entrada[0])
+valor_b = int(entrada[1])
+valor_c = int(entrada[2])
+
+menor_valor = valor_a
+maior_valor = valor_a
+meio_valor = valor_a
+
+# Maior valor
+if valor_b > maior_valor:
+    maior_valor = valor_b
+if valor_c > maior_valor:
+    maior_valor = valor_c
+
+# Menor valor    
+if valor_b < menor_valor:
+    menor_valor = valor_b 
+if valor_c < menor_valor:
+    menor_valor = valor_c
+
+# Meio valor
+if valor_a != menor_valor and valor_a != maior_valor:
+    meio_valor = valor_a
+if valor_b != menor_valor and valor_b != maior_valor:
+    meio_valor = valor_b
+if valor_c != menor_valor and valor_c != maior_valor:
+    meio_valor = valor_c
+
+print(menor_valor)
+print(meio_valor)
+print(maior_valor)
+print()
+print(valor_a)
+print(valor_b)
+print(valor_c)
