@@ -1,0 +1,17 @@
+entrada = str(input()).split()
+
+hora1 = int(entrada[0])
+hora2 = int(entrada[1]) 
+horario_final = 0
+
+if hora1 > hora2:
+    horario_final = 24 - hora1 + hora2
+    
+elif hora2 > hora1:
+    horario_final = hora2 - hora1 
+    
+else: 
+    horario_final = 24 
+    
+print(f'O JOGO DUROU {horario_final} HORA(S)')
+    
